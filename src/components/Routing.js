@@ -4,13 +4,13 @@ import Home from './Home';
 
 
 const Routing = () => {
-     return(
-         <div>
-             <BrowserRouter>
-             
-             </BrowserRouter>
-         </div>
-     )
+    return (
+        <div>
+            <BrowserRouter>
+                <Route exact path="/" component={Home}></Route>
+            </BrowserRouter>
+        </div>
+    )
 }
 
 export default Routing;
