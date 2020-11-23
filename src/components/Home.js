@@ -18,12 +18,20 @@ class Home extends Component {
 
     }
 
+    shouldComponentUpdate(){
+
+    }
+
     render() {
         return (
             <div>
 
             </div>
         )
+    }
+
+    componentDidUpdate(){
+        
     }
 
     componentWillUnmount() {
