@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Link} from 
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 
 class Routing extends Component{
