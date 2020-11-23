@@ -6,3 +6,5 @@ class Routing extends Component{
     render(){
     }
 }
+
+export default Routing;
