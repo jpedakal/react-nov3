@@ -1,10 +1,19 @@
 import React, { Component, Fragment } from 'react';
 import Banner from './Banner';
+import ArtistList from './ArtistList';
 
 const url = "http://localhost:8000/get_artist"
 
 class Home extends Component {
+    constructor() {
+        super()
+
+        this.state = {
+            artists: ""
+        }
+    }
     render() {
+        console.log(">>>",this.state.artists)
         return (
             <Fragment>
                 <Banner />
@@ -16,7 +25,10 @@ class Home extends Component {
         fetch(url, {
             method: "GET"
         })
-            .then((data) => data.json())
+            .then((res) => res.json())
+            .then((data)=>{
+                this.setState({artists: data})
+            })
     }
 }
 
