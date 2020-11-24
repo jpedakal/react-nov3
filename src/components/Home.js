@@ -16,9 +16,7 @@ class Home extends Component {
         fetch(url, {
             method: "GET"
         })
-            .then(data => {
-
-            })
+            .then((data) => data.json())
     }
 }
 
