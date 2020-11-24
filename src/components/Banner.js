@@ -6,6 +6,7 @@ const Banner = () => {
             <div className="main_cover">
                 <div className="logo">Artist App</div>
             </div>
+            <span></span>
         </div>
     )
 }
