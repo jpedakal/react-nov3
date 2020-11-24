@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 class Home extends Component {
 
@@ -18,19 +18,19 @@ class Home extends Component {
 
     }
 
-    shouldComponentUpdate(){
+    shouldComponentUpdate() {
 
     }
 
     render() {
         return (
-            <div>
+            <Fragment>
 
-            </div>
+            </Fragment>
         )
     }
 
-    componentDidUpdate(){
+    componentDidUpdate() {
 
     }
 
