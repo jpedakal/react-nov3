@@ -17,6 +17,7 @@ class Home extends Component {
         return (
             <Fragment>
                 <Banner />
+                <ArtistList artistData={this.state.artists}/>
             </Fragment>
         )
     }
