@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import Banner from './Banner';
 
+const url = "http://localhost:8000/get_artist"
+
 class Home extends Component {
     render() {
         return (
@@ -8,6 +10,15 @@ class Home extends Component {
                 <Banner />
             </Fragment>
         )
+    }
+
+    componentDidMount() {
+        fetch(url, {
+            method: "GET"
+        })
+            .then(data => {
+
+            })
     }
 }
 
