@@ -5,17 +5,19 @@ const ArtistList = (props) => {
   
     const renderList = ({ artistData }) => {
         if (artistData) {
-            return artistData.map((data) => {
+            return artistData.map((item,index) => {
                 return (
                     <div>
-                        <Link to="/" key={data._id}>
-                            <div>{data.name}</div>
+                        <Link to="/" key={index}>
+                            <div>{item.name}</div>
                         </Link>
                     </div>
                 )
             })
         }else{
-            
+            return (
+                <img src="/images/loader1.gif" alt="loader" />
+            )
         }
     }
 
