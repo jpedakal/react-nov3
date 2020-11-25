@@ -8,7 +8,7 @@ const ArtistList = (props) => {
             return artistData.map((item,index) => {
                 return (
                     <div>
-                        <Link to="/" key={index}>
+                        <Link to="/" key={index} style={}>
                             <div>{item.name}</div>
                         </Link>
                     </div>
