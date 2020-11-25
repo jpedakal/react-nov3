@@ -5,10 +5,13 @@ const ArtistList = (props) => {
   
     const renderList = ({ artistData }) => {
         if (artistData) {
-            return artistData.map((item,index) => {
+            return artistData.map((item) => {
+                const myImage={
+                    background:`url('/images/covers/${item.cover}.jpg')`
+                }
                 return (
                     <div>
-                        <Link to="/" key={index} style={}>
+                        <Link to="/" key={item.id} style={myImage}>
                             <div>{item.name}</div>
                         </Link>
                     </div>
