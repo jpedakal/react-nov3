@@ -41,6 +41,7 @@
     background-size: cover !important;
     margin-bottom: 20px;
     position: relative;
+    width: 300px;
 }
 
 .artist_list .artist_item div{
