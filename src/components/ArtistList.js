@@ -17,6 +17,7 @@ const ArtistList = (props) => {
     return (
         <div className="artist_list">
             <h4>List of Artists</h4>
+            {renderList(props)}
         </div>
     )
 }
