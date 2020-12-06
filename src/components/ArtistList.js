@@ -32,4 +32,4 @@ const ArtistList = (props) => {
     )
 }
 
-export default ArtistList;
+export default ArtistList
